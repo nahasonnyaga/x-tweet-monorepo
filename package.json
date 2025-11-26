@@ -1,0 +1,36 @@
+{
+  "name": "x-tweet-monorepo",
+  "version": "1.0.0",
+  "description": "Monorepo for X-tweet",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "concurrently \"pnpm --filter X-tweet dev\" \"pnpm --filter x-tweet-webhooks dev\" \"pnpm --filter x-tweet-trending dev\" \"pnpm --filter x-tweet-seo dev\" \"pnpm --filter x-tweet-hashtags dev\" \"pnpm --filter x-tweet-profiles dev\" \"pnpm --filter x-tweet-search dev\" \"pnpm --filter x-tweet-comments dev\" \"pnpm --filter x-tweet-reactions dev\" \"pnpm --filter x-tweet-moderation dev\" \"pnpm --filter x-tweet-notifications-queue dev\" \"pnpm --filter x-tweet-wallet dev\" \"pnpm --filter x-tweet-payments dev\" \"pnpm --filter x-tweet-analytics dev\" \"pnpm --filter x-tweet-videos dev\" \"pnpm --filter x-tweet-ai dev\" \"pnpm --filter x-tweet-notifications dev\" \"pnpm --filter x-tweet-media dev\" \"pnpm --filter x-tweet-suggested dev\" \"pnpm --filter x-tweet-users dev\" \"pnpm --filter x-tweet-admin dev\"",
+    "start-all": "pnpm dev"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.23.0",
+  "devDependencies": {
+    "@types/node": "^24.10.1",
+    "@types/react": "^19.2.7",
+    "concurrently": "^8.2.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "pnpm": {
+    "ignoreScripts": true
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.84.0",
+    "cloudinary": "^2.8.0",
+    "firebase-admin": "^13.6.0",
+    "next": "^16.0.4",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
+  }
+}
