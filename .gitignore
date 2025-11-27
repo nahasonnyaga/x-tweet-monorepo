@@ -1,6 +1,8 @@
 node_modules/
+dist/
+build/
+.next/
+*.log
+pnpm-lock.yaml
 .env
-packages/**/.env
-.DS_Store
-npm-debug.log
-pnpm-debug.log
+.env.local

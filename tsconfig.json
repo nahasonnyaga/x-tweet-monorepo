@@ -1,0 +1,27 @@
+{
+  "files": [],
+  "references": [
+    { "path": "packages/X-tweet" },
+    { "path": "packages/x-tweet-supabase" },
+    { "path": "packages/x-tweet-webhooks" },
+    { "path": "packages/x-tweet-trending" },
+    { "path": "packages/x-tweet-seo" },
+    { "path": "packages/x-tweet-hashtags" },
+    { "path": "packages/x-tweet-profiles" },
+    { "path": "packages/x-tweet-search" },
+    { "path": "packages/x-tweet-comments" },
+    { "path": "packages/x-tweet-reactions" },
+    { "path": "packages/x-tweet-moderation" },
+    { "path": "packages/x-tweet-notifications-queue" },
+    { "path": "packages/x-tweet-wallet" },
+    { "path": "packages/x-tweet-analytics" },
+    { "path": "packages/x-tweet-videos" },
+    { "path": "packages/x-tweet-ai" },
+    { "path": "packages/x-tweet-payments" },
+    { "path": "packages/x-tweet-notifications" },
+    { "path": "packages/x-tweet-media" },
+    { "path": "packages/x-tweet-suggested" },
+    { "path": "packages/x-tweet-users" },
+    { "path": "packages/x-tweet-admin" }
+  ]
+}
