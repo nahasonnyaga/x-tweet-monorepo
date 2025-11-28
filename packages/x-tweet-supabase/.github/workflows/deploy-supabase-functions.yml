@@ -1,0 +1,36 @@
+name: Deploy Supabase Functions
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Install system dependencies
+        run: |
+          sudo apt-get update -y
+          sudo apt-get install -y curl wget git unzip tar gzip jq nodejs npm build-essential
+
+      - name: Setup Supabase CLI
+        uses: supabase/setup-cli@v1
+        with:
+          version: '2.58.5'
+
+      - name: Verify Supabase CLI
+        run: supabase --version
+
+      - name: Deploy processPost function
+        env:
+          SUPABASE_ACCESS_TOKEN: ${{ secrets.SUPABASE_ACCESS_TOKEN }}
+        run: |
+          supabase login --token $SUPABASE_ACCESS_TOKEN
+          supabase link --project-ref xadpyaiwqrrwzlqrlysz
+          supabase functions deploy processPost --project-ref xadpyaiwqrrwzlqrlysz

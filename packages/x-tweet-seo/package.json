@@ -1,0 +1,21 @@
+{
+  "name": "x-tweet-seo",
+  "version": "1.0.0",
+  "description": "SEO engine and discovery accelerator for X-Tweet ecosystem",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node index.js",
+    "generate": "node generate-sitemaps.js",
+    "og": "node generate-og-images.js",
+    "sitemap-index": "node sitemap-index.js",
+    "trending": "node trending.js",
+    "test": "node test-run.js"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.12",
+    "node-fetch": "^3.3.1",
+    "compromise": "^14.0.0"
+  }
+}

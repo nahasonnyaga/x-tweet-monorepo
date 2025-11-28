@@ -1,0 +1,42 @@
+{
+  "name": "x-tweet-ai",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "AI services for X-tweet platform (summarization, moderation, analysis)",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "dev": "next dev",
+    "build": "tsc --project tsconfig.json",
+    "start": "next start",
+    "prepare": "husky install",
+    "test": "echo \"No test specified\" && exit 1"
+  },
+  "keywords": [
+    "x-tweet",
+    "ai",
+    "openai",
+    "summarization",
+    "moderation"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@supabase/supabase-js": "^2.86.0",
+    "dotenv": "^17.2.3",
+    "next": "14.2.13",
+    "openai": "^6.9.1",
+    "react": "^18",
+    "react-dom": "^18"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.28.5",
+    "@babel/preset-env": "^7.28.5",
+    "@babel/preset-react": "^7.28.5",
+    "@types/node": "^24.10.1",
+    "@types/react": "^19.2.6",
+    "husky": "^8.0.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  }
+}

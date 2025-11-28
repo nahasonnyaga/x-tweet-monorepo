@@ -1,0 +1,49 @@
+name: Deploy Supabase Functions
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Install Supabase CLI
+        run: |
+          curl -L https://github.com/supabase/cli/releases/download/v2.58.5/supabase_2.58.5_linux_amd64.tar.gz | tar -xz
+          sudo mv supabase /usr/local/bin/
+
+      - name: Deploy processPost function
+        env:
+          SUPABASE_ACCESS_TOKEN: ${{ secrets.SUPABASE_ACCESS_TOKEN }}
+        run: |
+          supabase login --no-localhost --access-token $SUPABASE_ACCESS_TOKEN
+          supabase link --project-ref xadpyaiwqrrwzlqrlysz
+          supabase functions deploy processPost --project-ref xadpyaiwqrrwzlqrlysz
+
+      - name: Test processPost function
+        env:
+          SUPABASE_ACCESS_TOKEN: ${{ secrets.SUPABASE_ACCESS_TOKEN }}
+        run: |
+          echo "Sending test request to processPost..."
+          RESPONSE=$(curl -s -w "\n%{http_code}" -X POST "https://xadpyaiwqrrwzlqrlysz.functions.supabase.co/processPost" \
+            -H "Authorization: Bearer $SUPABASE_ACCESS_TOKEN" \
+            -H "Content-Type: application/json" \
+            -d '{"name":"GitHub Actions"}')
+          
+          BODY=$(echo "$RESPONSE" | sed '$d')
+          STATUS=$(echo "$RESPONSE" | tail -n1)
+          
+          echo "Function response body: $BODY"
+          echo "Function response status: $STATUS"
+          
+          if [ "$STATUS" -ne 200 ]; then
+            echo "Function test failed!"
+            exit 1
+          fi
+          echo "Function test succeeded!"

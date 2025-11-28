@@ -1,0 +1,25 @@
+{
+  "name": "x-tweet-analytics",
+  "version": "1.0.0",
+  "description": "Analytics services for X-tweet platform (metrics, trends, insights)",
+  "main": "src/index.ts",
+  "scripts": {
+    "dev": "ts-node src/index.ts",
+    "build": "tsc",
+    "test": "echo \"No tests yet\" && exit 0",
+    "prepare": "husky install"
+  },
+  "keywords": ["x-tweet", "analytics", "metrics", "trends", "insights"],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@supabase/supabase-js": "^2.33.0",
+    "dotenv": "^17.2.3"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.3",
+    "@types/node": "^24.10.1",
+    "ts-node": "^10.9.2",
+    "husky": "^8.0.1"
+  }
+}

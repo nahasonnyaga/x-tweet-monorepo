@@ -1,0 +1,23 @@
+/data/data/com.termux/files/home/x-tweet-suite/x-tweet-monorepo/packages/X-tweet/src/pages/api/tweets.ts:import { supabase } from "@x-tweet-supabase/lib/app";
+/data/data/com.termux/files/home/x-tweet-suite/x-tweet-monorepo/packages/X-tweet/src/pages/api/tweets.ts:import { uploadAndInsertMedia } from "@x-tweet-admin/lib/uploadMedia";
+/data/data/com.termux/files/home/x-tweet-suite/x-tweet-monorepo/packages/X-tweet/src/all-microservices.txt:x-tweet-admin
+/data/data/com.termux/files/home/x-tweet-suite/x-tweet-monorepo/packages/X-tweet/src/all-microservices.txt:x-tweet-ai
+/data/data/com.termux/files/home/x-tweet-suite/x-tweet-monorepo/packages/X-tweet/src/all-microservices.txt:x-tweet-analytics
+/data/data/com.termux/files/home/x-tweet-suite/x-tweet-monorepo/packages/X-tweet/src/all-microservices.txt:x-tweet-comments
+/data/data/com.termux/files/home/x-tweet-suite/x-tweet-monorepo/packages/X-tweet/src/all-microservices.txt:x-tweet-hashtags
+/data/data/com.termux/files/home/x-tweet-suite/x-tweet-monorepo/packages/X-tweet/src/all-microservices.txt:x-tweet-media
+/data/data/com.termux/files/home/x-tweet-suite/x-tweet-monorepo/packages/X-tweet/src/all-microservices.txt:x-tweet-moderation
+/data/data/com.termux/files/home/x-tweet-suite/x-tweet-monorepo/packages/X-tweet/src/all-microservices.txt:x-tweet-notifications
+/data/data/com.termux/files/home/x-tweet-suite/x-tweet-monorepo/packages/X-tweet/src/all-microservices.txt:x-tweet-notifications-queue
+/data/data/com.termux/files/home/x-tweet-suite/x-tweet-monorepo/packages/X-tweet/src/all-microservices.txt:x-tweet-payments
+/data/data/com.termux/files/home/x-tweet-suite/x-tweet-monorepo/packages/X-tweet/src/all-microservices.txt:x-tweet-profiles
+/data/data/com.termux/files/home/x-tweet-suite/x-tweet-monorepo/packages/X-tweet/src/all-microservices.txt:x-tweet-reactions
+/data/data/com.termux/files/home/x-tweet-suite/x-tweet-monorepo/packages/X-tweet/src/all-microservices.txt:x-tweet-search
+/data/data/com.termux/files/home/x-tweet-suite/x-tweet-monorepo/packages/X-tweet/src/all-microservices.txt:x-tweet-seo
+/data/data/com.termux/files/home/x-tweet-suite/x-tweet-monorepo/packages/X-tweet/src/all-microservices.txt:x-tweet-suggested
+/data/data/com.termux/files/home/x-tweet-suite/x-tweet-monorepo/packages/X-tweet/src/all-microservices.txt:x-tweet-supabase
+/data/data/com.termux/files/home/x-tweet-suite/x-tweet-monorepo/packages/X-tweet/src/all-microservices.txt:x-tweet-trending
+/data/data/com.termux/files/home/x-tweet-suite/x-tweet-monorepo/packages/X-tweet/src/all-microservices.txt:x-tweet-users
+/data/data/com.termux/files/home/x-tweet-suite/x-tweet-monorepo/packages/X-tweet/src/all-microservices.txt:x-tweet-videos
+/data/data/com.termux/files/home/x-tweet-suite/x-tweet-monorepo/packages/X-tweet/src/all-microservices.txt:x-tweet-wallet
+/data/data/com.termux/files/home/x-tweet-suite/x-tweet-monorepo/packages/X-tweet/src/all-microservices.txt:x-tweet-webhooks
